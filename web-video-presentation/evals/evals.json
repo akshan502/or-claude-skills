@@ -1,0 +1,38 @@
+{
+  "skill_name": "web-video-presentation",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "我有一篇文章 text.md，帮我做成水墨画风格的视频，主题色 #f0945d",
+      "expected_output": "完成从文章到交互式网页演示的完整流程，包括口播稿转换、章节规划、自定义主题创建、7 章 Vite+Vue3 项目搭建",
+      "expectations": [
+        "产出 script.md（口播稿，保留原文关键信息，B站风格口语化）",
+        "产出 outline.md（7 章，每章 2+ steps，带信息池和来源标注）",
+        "创建自定义主题（themes/ink-wash/theme.json + tokens.css）",
+        "脚手架项目通过 typecheck（vue-tsc --noEmit）",
+        "每章有 narrations.ts，step 数与 outline 一致",
+        "每章有独立的 .vue + .css 文件实现视觉演示"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "我有一篇口播稿，帮我做成动态PPT",
+      "expected_output": "识别用户已有口播稿，走 Phase 1.2 简化流程，产出 outline 开发计划",
+      "expectations": [
+        "识别用户给的是口播稿，直接落盘为 script.md",
+        "产出 outline.md 带章节切分和信息池",
+        "进入 Checkpoint Plan，推荐匹配主题",
+        "不要求用户额外写文章"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "帮我做一个关于 AI 产品的介绍视频",
+      "expected_output": "Skill 不替用户构思内容，应反问要求用户提供素材或大纲",
+      "expectations": [
+        "反问用户，要求提供文章/口播稿/大纲",
+        "不自行生成内容"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+/* ─────────────────────────────────────────────────────────────────────
+ * Theme · ink-wash
+ *   Warm rice paper backdrop with deep ink tones and a warm orange
+ *   accent (#f0945d). Traditional Chinese ink wash painting aesthetics —
+ *   generous whitespace, layered ink textures, brush calligraphy mood.
+ *
+ *   character knobs:
+ *     • hero numbers   — italic Noto Serif SC, warm ink tone
+ *     • rule           — 1px solid ink hairline
+ *     • card radius    — 4px refined (ink stamp precision)
+ *     • surface        — subtle rice paper grain (SVG noise + cream gradient)
+ *     • motion         — quiet and measured (1.3s cinematic)
+ * ───────────────────────────────────────────────────────────────────── */
+:root {
+  /* ─── palette: warm rice paper + ink ─── */
+  --shell:        #ebe5d8;
+  --surface:      #f5f0e6;
+  --surface-2:    #faf6ee;
+  --surface-3:    #e8dfcf;
+  --text:         #1a1a1a;
+  --text-2:       #3d3632;
+  --text-mute:    #8a7e72;
+  --text-faint:   #bfb5a8;
+  --rule:         #d4cbbf;
+  --accent:       #f0945d;
+  --accent-soft:  rgba(240, 148, 93, 0.10);
+  --accent-glow:  rgba(240, 148, 93, 0.30);
+
+  /* ─── fonts: Noto Serif SC for Chinese, Playfair for English ─── */
+  --font-display-cn: "Noto Serif SC", "Source Han Serif SC", serif;
+  --font-display-en: "Playfair Display", "Georgia", serif;
+  --font-body:       "Noto Serif SC", "Source Han Serif SC", serif;
+  --font-mono:       "JetBrains Mono", "SF Mono", ui-monospace, monospace;
+  --font-features:   "tnum", "ss01";
+
+  /* ─── motion: quiet, measured (ink settles slowly) ─── */
+  --dur-base:       800ms;
+  --dur-slow:       1300ms;
+  --dur-cinematic:  1800ms;
+
+  /* ─── design identity ─── */
+  --r-card:        var(--r-xs);      /* 4px — ink stamp precision */
+  --r-stage:       0;
+  --rule-w:        1px;
+  --rule-style:    solid;
+  --hero-num-font:    var(--font-display-cn);
+  --hero-num-style:   italic;
+  --hero-num-weight:  500;
+  --hero-num-track:   -0.02em;
+  --stage-pad-x:   120px;
+  --stage-pad-y:   90px;
+  --card-shadow:
+    0 1px 0 var(--rule),
+    0 12px 32px rgba(40, 30, 20, 0.06);
+  --shadow-stage:
+    0 40px 120px rgba(40, 30, 20, 0.15),
+    0 0 0 1px rgba(0, 0, 0, 0.03);
+
+  /* ─── decoration: subtle rice paper grain ─── */
+  --surface-pattern:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
+  --surface-pattern-size: 200px 200px;
+  --surface-pattern-blend: multiply;
+  --surface-pattern-opacity: 0.03;
+}

@@ -1,0 +1,28 @@
+{
+  "id": "ink-wash",
+  "name": "Ink Wash",
+  "nameZh": "水墨",
+  "description": "Warm rice paper backdrop with deep ink tones and a single warm orange accent. Traditional Chinese ink wash painting aesthetics — elegant strokes, generous whitespace, brush calligraphy mood. Best for culturally-rooted content and product demos with Chinese visual identity.",
+  "descriptionZh": "宣纸暖底 + 深墨文字 + 暖橙强调色（#f0945d）。中国传统水墨意境，留白透气、墨韵层次、晕染质感，适合有东方美学的产品演示与口播。",
+  "mood": [
+    "light",
+    "elegant",
+    "traditional",
+    "artistic",
+    "ink-wash",
+    "chinese",
+    "zen"
+  ],
+  "bestFor": [
+    "文化 / 东方美学内容",
+    "国风产品演示",
+    "有中国视觉识别的品牌讲解",
+    "禅意 / 留白风格的口播"
+  ],
+  "preview": {
+    "shell": "#f5f0e8",
+    "surface": "#faf6ee",
+    "text": "#1a1a1a",
+    "accent": "#f0945d"
+  }
+}
